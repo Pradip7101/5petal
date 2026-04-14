@@ -239,6 +239,9 @@ class ProductsController extends Controller
             'man_hours' => 'nullable|string|max:255',
             'first_order_free_gift' => 'nullable|string|max:255',
             'third_order_free_gift' => 'nullable|string|max:255',
+            'color' => 'nullable|string|max:255',
+            'disclaimer' => 'nullable|string',
+            'model_info' => 'nullable|string|max:255',
             'regular_price' => ['required', 'numeric', function ($attribute, $value, $fail) use ($request) {
                 if ($request->sale_price && $value <= $request->sale_price) {
                     $fail('The regular price must be greater than the sale price.');

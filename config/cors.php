@@ -15,6 +15,7 @@ return [
         // Vercel deploy Link
         'https://5-petal-intern-project.vercel.app',
         'https://5petal-intern-project-production.up.railway.app',
+        'https://5petal-work-h2d8.vercel.app', // Your actual Vercel URL
     ],
 
     'allowed_origins_patterns' => [

@@ -37,7 +37,10 @@ class Product extends Model
         'material',
         'man_hours',
         'first_order_free_gift',
-        'third_order_free_gift'
+        'third_order_free_gift',
+        'color',
+        'disclaimer',
+        'model_info'
     ];
 
     protected $casts = [

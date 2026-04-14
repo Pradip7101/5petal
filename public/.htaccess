@@ -4,7 +4,7 @@
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /
+    RewriteBase /5Petal-Intern-project/fashion-website-backend/public/
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

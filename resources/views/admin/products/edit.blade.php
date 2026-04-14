@@ -351,6 +351,29 @@
                                     <span class="invalid-feedback">{{ $message }}</span>
                                 @enderror
                             </div>
+                            <div class="col-md-6 form-group">
+                                <label for="color" class="form-label">Color</label>
+                                <input type="text" name="color" class="form-control @error('color') is-invalid @enderror" id="color" value="{{ old('color', $product->color) }}">
+                                @error('color')
+                                    <span class="invalid-feedback">{{ $message }}</span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="model_info" class="form-label">Model Info</label>
+                                <input type="text" name="model_info" class="form-control @error('model_info') is-invalid @enderror" id="model_info" value="{{ old('model_info', $product->model_info) }}" placeholder="e.g., The model (height 5'8) is wearing a size S.">
+                                @error('model_info')
+                                    <span class="invalid-feedback">{{ $message }}</span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="disclaimer" class="form-label">Disclaimer</label>
+                            <textarea name="disclaimer" class="form-control @error('disclaimer') is-invalid @enderror" id="disclaimer" rows="3" placeholder="e.g., There might be a slight variation in the actual color of the product due to different screen resolutions.">{{ old('disclaimer', $product->disclaimer) }}</textarea>
+                            @error('disclaimer')
+                                <span class="invalid-feedback">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="row">
                             <div class="col-6">
